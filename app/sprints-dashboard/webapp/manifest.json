@@ -17,7 +17,7 @@
     },
     "dataSources": {
       "mainService": {
-        "uri": "/api/portal/",
+        "uri": "https://sprints-p2w7.onrender.com/odata/v4/portal/",
         "type": "OData",
         "settings": {
           "annotations": [],
