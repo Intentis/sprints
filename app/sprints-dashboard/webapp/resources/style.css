@@ -1,0 +1,19 @@
+/* Hide label area and reduce padding */
+.sapTntNavLIText, 
+.sapTntNavLIGroup .sapTntNavLIText {
+    display: none !important;
+    width: 0 !important;
+    padding: 0 !important;
+}
+
+.sapTntNavLI, .sapTntNavLIGroup {
+    min-width: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.sapTntSideNavigation {
+    width: 4rem !important;
+    min-width: 4rem !important;
+    max-width: 4rem !important;
+}

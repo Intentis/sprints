@@ -5,8 +5,13 @@
     <tnt:ToolHeader>
         <Image src="resources/images/logo.png" height="2.5rem" class="sapUiSmallMarginBegin" />
         <ToolbarSpacer />
+        <SearchField 
+            id="globalSearch"
+            placeholder="Search Sprints..." 
+            width="30%"
+            search=".onGlobalSearch" />
+        <Button icon="sap-icon://bell" type="Transparent" />
         <Button icon="sap-icon://settings" type="Transparent" />
-        <Button icon="sap-icon://log" type="Transparent" />
         <Avatar src="sap-icon://customer" displaySize="XS" press="onProfilePress" />
     </tnt:ToolHeader>
 </core:FragmentDefinition>

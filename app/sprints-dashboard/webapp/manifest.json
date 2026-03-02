@@ -79,7 +79,9 @@
       }
     },
     "resources": {
-      "css": []
+      "css": [
+        { "uri": "resources/style.css" }
+      ]
     },
     "routing": {
       "config": {},

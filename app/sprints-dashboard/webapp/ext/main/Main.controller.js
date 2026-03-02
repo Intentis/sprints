@@ -6,6 +6,15 @@ sap.ui.define(
         'use strict';
 
         return PageController.extend('sprints.portal.sprintsdashboard.ext.main.Main', {
+
+            onCAPDocumentationPress: function() {
+                window.open("https://cap.cloud.sap/docs/", "_blank");
+            },
+
+            onUI5DocumentationPress: function() {
+                window.open("https://ui5.sap.com/", "_blank");
+            }
+
             /**
              * Called when a controller is instantiated and its View controls (if available) are already created.
              * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
