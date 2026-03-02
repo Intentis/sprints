@@ -1,0 +1,28 @@
+<mvc:View 
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:tnt="sap.tnt"
+    xmlns:macros="sap.fe.macros" 
+    xmlns:html="http://www.w3.org/1999/xhtml" 
+    controllerName="sprints.portal.sprintsdashboard.ext.main.Main"
+    displayBlock="true"
+>
+
+<tnt:ToolPage id="toolPage">
+    <tnt:header>
+        <core:Fragment fragmentName="sprints.portal.sprintsdashboard.fragments.Header" type="XML" />
+    </tnt:header>
+
+    <tnt:sideContent>
+        <core:Fragment fragmentName="sprints.portal.sprintsdashboard.fragments.SideNav" type="XML" />
+    </tnt:sideContent>
+
+    <tnt:mainContents>
+        <NavContainer id="pageContainer">
+            </NavContainer>
+    </tnt:mainContents>
+</tnt:ToolPage>
+
+</mvc:View>

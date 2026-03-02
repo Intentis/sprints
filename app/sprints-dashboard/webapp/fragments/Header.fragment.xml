@@ -1,0 +1,12 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+    xmlns:core="sap.ui.core">
+    <tnt:ToolHeader>
+        <Image src="resources/images/logo.png" height="2.5rem" class="sapUiSmallMarginBegin" />
+        <ToolbarSpacer />
+        <Button icon="sap-icon://settings" type="Transparent" />
+        <Button icon="sap-icon://log" type="Transparent" />
+        <Avatar src="sap-icon://customer" displaySize="XS" press="onProfilePress" />
+    </tnt:ToolHeader>
+</core:FragmentDefinition>
