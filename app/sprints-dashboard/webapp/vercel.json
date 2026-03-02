@@ -1,4 +1,13 @@
 {
     "trailingSlash": false,
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+    "rewrites": [
+        {
+            "source": "/api/portal/(.*)",
+            "destination": "https://sprints-p2w7.onrender.com/api/portal/$1"
+            },
+        { 
+            "source": "/(.*)", 
+            "destination": "/index.html" 
+        }
+    ]
 }
