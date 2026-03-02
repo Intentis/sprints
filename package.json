@@ -27,6 +27,9 @@
         "credentials": {
           "url": "db/sprints.db"
         }
+      },
+      "auth": {
+        "kind": "dummy"
       }
     }
   },
