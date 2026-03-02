@@ -1,0 +1,34 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <ResponsivePopover
+        title="My Profile"
+        placement="Bottom"
+        contentWidth="300px">
+        <content>
+            <VBox class="sapUiMediumMargin">
+                <HBox alignItems="Center" class="sapUiSmallMarginBottom">
+                    <Avatar src="sap-icon://customer" displaySize="L" class="sapUiSmallMarginEnd" />
+                    <VBox>
+                        <Title text="Deepak" level="H3" />
+                        <Text text="Level 5: CAP Specialist" />
+                    </VBox>
+                </HBox>
+                <Label text="Progress to Level 6" />
+                <ProgressIndicator 
+                    percentValue="75" 
+                    displayValue="750 / 1000 XP" 
+                    showValue="true" 
+                    state="Success" />
+                <Button text="View All Achievements" type="Emphasized" class="sapUiSmallMarginTop" width="100%" />
+            </VBox>
+        </content>
+        <footer>
+            <Toolbar>
+                <Button text="Edit Profile" icon="sap-icon://personnel-view" press="onEditProfile" />
+                <ToolbarSpacer />
+                <Button text="Sign Out" icon="sap-icon://log" press="onLogout" />
+            </Toolbar>
+        </footer>
+    </ResponsivePopover>
+</core:FragmentDefinition>

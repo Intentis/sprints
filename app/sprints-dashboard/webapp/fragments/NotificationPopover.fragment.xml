@@ -1,0 +1,27 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Popover
+        title="Recent Alerts"
+        placement="Bottom"
+        contentWidth="350px">
+        <List noDataText="No new alerts">
+            <StandardListItem 
+                title="Leaderboard Update" 
+                description="Amisha just completed 'Deep Join' and took the #1 spot!" 
+                icon="sap-icon://lead" 
+                info="New" 
+                infoState="Warning" />
+            <StandardListItem 
+                title="New Sprint Released" 
+                description="CAP-Java: Spring Security challenge is now live." 
+                icon="sap-icon://add-product" />
+        </List>
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer />
+                <Button text="Clear All" press="onClearNotifications" />
+            </OverflowToolbar>
+        </footer>
+    </Popover>
+</core:FragmentDefinition>

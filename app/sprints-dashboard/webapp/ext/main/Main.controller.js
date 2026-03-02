@@ -13,6 +13,30 @@ sap.ui.define(
 
             onUI5DocumentationPress: function() {
                 window.open("https://ui5.sap.com/", "_blank");
+            },
+
+            onProfilePress: function (oEvent) {
+                var oButton = oEvent.getSource();
+                if (!this._pProfilePopover) {
+                    this._pProfilePopover = this.loadFragment({
+                        name: "sprints.portal.sprintsdashboard.fragments.ProfilePopover"
+                    });
+                }
+                this._pProfilePopover.then(function(oPopover) {
+                    oPopover.openBy(oButton);
+                });
+            },
+
+            onNotificationPress: function (oEvent) {
+                var oButton = oEvent.getSource();
+                if (!this._pNotifPopover) {
+                    this._pNotifPopover = this.loadFragment({
+                        name: "sprints.portal.sprintsdashboard.fragments.NotificationPopover"
+                    });
+                }
+                this._pNotifPopover.then(function(oPopover) {
+                    oPopover.openBy(oButton);
+                });
             }
 
             /**
