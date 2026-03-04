@@ -25,9 +25,7 @@
 
 
 .homepage-bg-gradient {
-    background: 
-        url('../resources/images/anvil-bg.jpg'),
-        linear-gradient(90deg, #0056b3 0%, #00a3e0 100%);
+    background: linear-gradient(90deg, #0056b3 0%, #00a3e0 100%);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
