@@ -1,0 +1,30 @@
+<f:Card 
+    xmlns:f="sap.f"
+    xmlns:card="sap.f.cards"
+    xmlns="sap.m"
+    width="100%"> <f:header>
+        <card:Header 
+            title="Continue Your Sprint" 
+            subtitle="Current Path: SAP CAP Java Mastery" 
+            iconSrc="sap-icon://education" />
+    </f:header>
+    <f:content>
+        <VBox class="sapUiMediumMargin" width="100%">
+            <HBox justifyContent="SpaceBetween" alignItems="Center" width="100%">
+                <VBox>
+                    <Title text="Challenge: Implementing Custom Logic" level="H3" />
+                    <Text text="Module 3: Using @Before and @After Handlers" class="sapUiTinyMarginBottom" />
+                </VBox>
+                <Button text="Resume Coding" type="Emphasized" press="onResumeSprint" />
+            </HBox>
+            
+            <Label text="Progress: 65%" class="sapUiSmallMarginTop" />
+            <ProgressIndicator 
+                percentValue="65" 
+                displayValue="65%" 
+                state="Information" 
+                showValue="true"
+                width="100%" /> 
+        </VBox>
+    </f:content>
+</f:Card>

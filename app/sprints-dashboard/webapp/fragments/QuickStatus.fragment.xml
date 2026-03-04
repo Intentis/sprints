@@ -1,0 +1,22 @@
+<c:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:layout="sap.ui.layout"
+    
+>
+    <layout:HorizontalLayout class="sapUiMediumMarginBegin">
+        <GenericTile header="Total Points" frameType="OneByHalf" class="sapUiTinyMarginEnd tileLayout">
+            <TileContent unit="Unit" footer="Footer Text">
+                <NumericContent value="1762" icon="sap-icon://line-charts" withMargin="false" />
+            </TileContent>
+        </GenericTile>
+        <GenericTile header="Current Rank" frameType="OneByHalf" class="sapUiTinyMarginEnd tileLayout">
+            <TileContent>
+                <NumericContent value="12" icon="sap-icon://badge" withMargin="false" />
+            </TileContent>
+        </GenericTile>
+    </layout:HorizontalLayout>
+</c:FragmentDefinition>
+
+
+

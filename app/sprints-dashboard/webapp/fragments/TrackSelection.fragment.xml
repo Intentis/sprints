@@ -1,0 +1,51 @@
+
+
+<c:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:f="sap.f"
+    xmlns:card="sap.f.cards"
+    xmlns:layout="sap.ui.layout"
+>
+    <VBox class="sapUiSmallMargin">
+        <Title text="Choose Your Learning Path" level="H2" class="sapUiMediumMargin" />
+        <layout:Grid defaultSpan="XL6 L6 M12 S12">
+            <f:Card class="sapUiSmallMarginBottom">
+                <f:header>
+                    <card:Header 
+                        title="Cloud Application Programming Model" 
+                        subtitle="Java &amp; Node.js Tracks" 
+                        iconSrc="sap-icon://instance" />
+                </f:header>
+                <f:content>
+                    <VBox class="sapUiSmallMargin">
+                        <Text text="Master building enterprise-grade backends. Learn CDS modeling, custom handlers, and OData V4 integration." />
+                        <List class="sapUiSmallMarginTop">
+                            <StandardListItem title="CAP Java: Logic &amp; Persistence" type="Navigation" press="onChallengePress" />
+                            <StandardListItem title="CAP Node.js: Rapid Prototyping" type="Navigation" press="onChallengePress" />
+                        </List>
+                        <Button text="Explore CAP Challenges" type="Ghost" class="sapUiSmallMarginTop" />
+                    </VBox>
+                </f:content>
+            </f:Card>
+            <f:Card>
+                <f:header>
+                    <card:Header 
+                        title="SAPUI5 &amp; Frontend" 
+                        subtitle="Freestyle &amp; Fiori Elements" 
+                        iconSrc="sap-icon://ui-reporting" />
+                </f:header>
+                <f:content>
+                    <VBox class="sapUiSmallMargin">
+                        <Text text="Learn to build responsive UIs. Focus on XML views, controller logic, and advanced data binding." />
+                        <List class="sapUiSmallMarginTop">
+                            <StandardListItem title="UI5 Freestyle: Custom Controls" type="Navigation" press="onChallengePress" />
+                            <StandardListItem title="Fiori Elements: Metadata Driven UI" type="Navigation" press="onChallengePress" />
+                        </List>
+                        <Button text="Explore UI5 Challenges" type="Ghost" class="sapUiSmallMarginTop" />
+                    </VBox>
+                </f:content>
+            </f:Card>
+        </layout:Grid>
+    </VBox>
+</c:FragmentDefinition>

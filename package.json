@@ -2,7 +2,7 @@
   "name": "sprints",
   "version": "1.0.0",
   "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
+  "repository": "https://github.com/Intentis/sprints",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
@@ -17,7 +17,6 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-intentis-dashboard": "cds watch --open intentis-dashboard/webapp/index.html?sap-ui-xx-viewCache=false",
     "watch-sprints-dashboard": "cds watch --open sprints-dashboard/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
@@ -34,7 +33,6 @@
     }
   },
   "sapux": [
-    "app/intentis-dashboard",
     "app/sprints-dashboard"
   ]
 }

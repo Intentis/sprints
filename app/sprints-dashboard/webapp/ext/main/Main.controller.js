@@ -15,6 +15,10 @@ sap.ui.define(
                 window.open("https://ui5.sap.com/", "_blank");
             },
 
+            onRaiseIssuePress: function() {
+                window.open("https://github.com/Intentis/sprints/issues", "_blank");
+            },
+
             onProfilePress: function (oEvent) {
                 var oButton = oEvent.getSource();
                 if (!this._pProfilePopover) {

@@ -17,3 +17,71 @@
     min-width: 4rem !important;
     max-width: 4rem !important;
 }
+
+.sprintsContentPadding {
+    padding: 2rem !important; /* This adds 16px on all sides */
+    box-sizing: border-box;   /* Crucial: ensures padding doesn't push width past 100% */
+}
+
+
+.homepage-bg-gradient {
+    background: 
+        url('../resources/images/anvil-bg.jpg'),
+        linear-gradient(90deg, #0056b3 0%, #00a3e0 100%);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.sprintsHeroHeight {
+    height: 250px; /* Taller height gives the image and text more room to breathe */
+}
+
+.sprintsGreetingText {
+    color: white !important;
+    font-size: 3rem !important; /* Large, bold text for a professional landing */
+    font-weight: bold !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Float the card over the hero */
+.sprintsContentOverlap {
+    margin-top: -110px !important; /* Pulls the card deeper into the blue for a lively look */
+    position: relative;
+    z-index: 2;
+}
+
+
+.sprintsFooterContainer {
+    margin-top: 3rem !important; /* Extra breathing room below the tracks */
+    border-top: 1px solid #e5e5e5 !important;
+    background-color: #fdfdfd;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+}
+
+.sprintsFooterBar {
+    background-color: transparent !important;
+    height: 3.5rem !important;
+    border-bottom: none !important;
+}
+
+.sprintsFooterText {
+    font-size: 0.8rem !important;
+    color: #6a6d70 !important;
+    font-weight: 500;
+}
+
+/* Styling links to match the SAP Horizon theme blue */
+.sprintsFooterBar .sapMLnk {
+    font-size: 0.85rem !important;
+    color: #0056b3 !important;
+}
+
+.sprintsFooterBar .sapMLnk:hover {
+    color: #004085 !important;
+    text-decoration: underline !important;
+}
