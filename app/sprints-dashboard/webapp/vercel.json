@@ -3,7 +3,7 @@
     "rewrites": [
         {
             "source": "/api/portal/(.*)",
-            "destination": "https://sprints-p2w7.onrender.com/api/portal/$1"
+            "destination": "https://sprints-p2w7.onrender.com/$1"
             },
         { 
             "source": "/(.*)", 
