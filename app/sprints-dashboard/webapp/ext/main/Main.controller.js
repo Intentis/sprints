@@ -6,6 +6,34 @@ sap.ui.define(
         'use strict';
 
         return PageController.extend('sprints.portal.sprintsdashboard.ext.main.Main', {
+            onItemSelect: function (oEvent) {
+                console.log("Item selected:", oEvent.getParameter("item").getKey());
+                var oItem = oEvent.getParameter("item");
+                var sKey = oItem.getKey();
+
+                var oView = sap.ui.view({
+                    viewName: "sprints.portal.sprintsdashboard.ext.views." + sKey, // Adjust the view name as needed
+                    type: sap.ui.core.mvc.ViewType.XML
+                });
+
+                // Navigate to the selected page
+                this.getView().byId("mainContent").addPage(oView);
+                this.getView().byId("mainContent").to(oView);
+            },
+
+            onInit: function () {
+                PageController.prototype.onInit.apply(this, arguments); 
+            // Create the Home view manually
+            var oHomeView = sap.ui.view({
+                viewName: "sprints.portal.sprintsdashboard.ext.views.Home", // Adjust the view name as needed
+                type: sap.ui.core.mvc.ViewType.XML
+            });
+
+            // Add the view to the App control's pages aggregation
+            this.byId("mainContent").addPage(oHomeView);
+            // Optionally, set it as the initial page
+            this.byId("mainContent").to(oHomeView);
+        },
 
             onCAPDocumentationPress: function() {
                 window.open("https://cap.cloud.sap/docs/", "_blank");
@@ -23,7 +51,7 @@ sap.ui.define(
                 var oButton = oEvent.getSource();
                 if (!this._pProfilePopover) {
                     this._pProfilePopover = this.loadFragment({
-                        name: "sprints.portal.sprintsdashboard.fragments.ProfilePopover"
+                        name: "sprints.portal.sprintsdashboard.ext.fragments.ProfilePopover"
                     });
                 }
                 this._pProfilePopover.then(function(oPopover) {
@@ -35,7 +63,7 @@ sap.ui.define(
                 var oButton = oEvent.getSource();
                 if (!this._pNotifPopover) {
                     this._pNotifPopover = this.loadFragment({
-                        name: "sprints.portal.sprintsdashboard.fragments.NotificationPopover"
+                        name: "sprints.portal.sprintsdashboard.ext.fragments.NotificationPopover"
                     });
                 }
                 this._pNotifPopover.then(function(oPopover) {

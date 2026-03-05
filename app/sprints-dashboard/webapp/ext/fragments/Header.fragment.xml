@@ -5,11 +5,6 @@
     <tnt:ToolHeader>
         <Image src="resources/images/logo.png" height="2.5rem" class="sapUiSmallMarginBegin" />
         <ToolbarSpacer />
-        <SearchField 
-            id="globalSearch"
-            placeholder="Search Sprints..." 
-            width="30%"
-            search=".onGlobalSearch" />
         <Button icon="sap-icon://bell" type="Transparent" tooltip="Notifications" press="onNotificationPress" />
         <Button icon="sap-icon://settings" type="Transparent" tooltip="Settings" press="onSettingsPress" />
         <Avatar src="sap-icon://customer" displaySize="XS" badgeTooltip="My Profile" press="onProfilePress" />
