@@ -1,0 +1,67 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <VBox class="sapUiMediumMarginBegin sapUiMediumMarginEnd">
+        <Table sticky="HeaderToolbar,InfoToolbar" class="leaderboardTableShadow">
+        <headerToolbar>
+            <OverflowToolbar>
+                <Title text="All Participants" level="H2" />
+                <ToolbarSpacer />
+                <SearchField width="30%" placeholder="Search sprinters..." />
+            </OverflowToolbar>
+        </headerToolbar>
+        <columns>
+            <Column width="3rem" hAlign="Center"><Text text="#" /></Column>
+            <Column><Text text="Sprinter" /></Column>
+            <Column hAlign="End"><Text text="Country" /></Column>
+            <Column hAlign="End" minScreenWidth="Tablet" demandPopin="true"><Text text="Milestones" /></Column>
+            <Column hAlign="Center" width="12rem"><Text text="Total Score" /></Column>
+        </columns>
+        <items>
+            <ColumnListItem highlight="None">
+                <cells>
+                    <Text text="1" />
+                    <HBox alignItems="Center">
+                        <Avatar src="test-resources/sap/f/images/rebecca_f.png" displaySize="XS" class="sapUiTinyMarginEnd" />
+                        <Text text="Rebecca F." />
+                    </HBox>
+                    <Text text="India" class="sapUiTinyMarginEnd"/>
+                    <HBox justifyContent="End" class="sapUiTinyMarginEnd">
+                        <core:Icon src="sap-icon://badge" color="#e5ad06" size="1rem" />
+                        <Text text=" x 5" class="sapUiTinyMarginBegin" />
+                    </HBox>
+                    <ObjectNumber number="1420" unit="pts" state="Success" class="sapUiTinyMarginEnd" />
+                </cells>
+            </ColumnListItem>
+            <ColumnListItem highlight="None">
+                <cells>
+                    <Text text="2" />
+                    <HBox alignItems="Center">
+                        <Avatar src="test-resources/sap/f/images/john_m.png" displaySize="XS" class="sapUiTinyMarginEnd" />
+                        <Text text="John M." />
+                    </HBox>
+                    <Text text="India" class="sapUiTinyMarginEnd"/>
+                    <HBox justifyContent="End" class="sapUiTinyMarginEnd">
+                        <core:Icon src="sap-icon://badge" color="#e5ad06" size="1rem" />
+                        <Text text=" x 3" class="sapUiTinyMarginBegin" />
+                    </HBox>
+                    <ObjectNumber number="1752" unit="pts" state="Success" class="sapUiTinyMarginEnd" />
+                </cells>
+            </ColumnListItem>
+            <ColumnListItem highlight="None">
+                <cells>
+                    <Text text="3" />
+                    <HBox alignItems="Center">
+                        <Avatar src="test-resources/sap/f/images/sally_j.png" displaySize="XS" class="sapUiTinyMarginEnd" />
+                        <Text text="Sally J." />
+                    </HBox>
+                    <Text text="India" class="sapUiTinyMarginEnd"/>
+                    <HBox justifyContent="End" class="sapUiTinyMarginEnd">
+                        <core:Icon src="sap-icon://badge" color="#e5ad06" size="1rem" />
+                        <Text text=" x 2" class="sapUiTinyMarginBegin" />
+                    </HBox>
+                    <ObjectNumber number="1280" unit="pts" state="Success" class="sapUiTinyMarginEnd" />
+                </cells>
+            </ColumnListItem>
+        </items>
+        </Table>
+    </VBox>
+</core:FragmentDefinition>

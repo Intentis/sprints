@@ -1,0 +1,53 @@
+<c:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:layout="sap.ui.layout">
+    <HBox justifyContent="Center" alignItems="Center" width="100%">
+        <VBox alignItems="Center">
+            <Avatar
+                    src="{/GettyImages}"
+                    displayShape="Square"
+                    displaySize="L"
+                    imageFitType="Cover"
+                    press="onPress"
+                    badgeIcon="sap-icon://competitor"
+                    badgeTooltip= "Sabine Mayer"/>
+            <Text
+                    textAlign="Center"
+                    text="Name Goes here"
+                    class="sapUiSmallMarginTop"/>
+        </VBox>
+
+        <VBox alignItems="Center" class="sapUiMediumMarginBegin">
+            <Avatar
+                    src="{/GettyImages}"
+                    displayShape="Square"
+                    displaySize="L"
+                    imageFitType="Cover"
+                    press="onPress"
+                    badgeIcon="sap-icon://competitor"
+                    badgeTooltip= "Sabine Mayer"/>
+            <Text
+                    textAlign="Center"
+                    text="Name goes here"
+                    class="sapUiSmallMarginTop"/>
+        </VBox>
+        <VBox alignItems="Center" class="sapUiMediumMarginBegin">
+            <Avatar
+                    src="{/GettyImages}"
+                    displayShape="Square"
+                    displaySize="L"
+                    imageFitType="Cover"
+                    press="onPress"
+                    badgeIcon="sap-icon://competitor"
+                    badgeTooltip= "Sabine Mayer"/>
+            <Text
+                    textAlign="Center"
+                    text="Name goes here"
+                    class="sapUiSmallMarginTop"/>
+        </VBox>
+    </HBox>
+</c:FragmentDefinition>
+
+
+

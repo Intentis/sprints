@@ -1,0 +1,33 @@
+<mvc:View 
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:tnt="sap.tnt"
+    xmlns:macros="sap.fe.macros" 
+    xmlns:html="http://www.w3.org/1999/xhtml" 
+    displayBlock="true"
+>
+<tnt:ToolPage id="toolPage">
+    <tnt:mainContents>
+        <ScrollContainer vertical="true" horizontal="false" height="100%" width="100%">
+            <VBox class="homepage-bg-gradient sprintsHeroHeight">
+                <HBox justifyContent="SpaceBetween" alignItems="Center" width="100%" class="sapUiMediumPadding">
+                    <VBox class="sapUiLargeMarginBegin">
+                        <Title text="Welcome Back, Deepak!" level="H1" class="sprintsGreetingText sapUiLargeMarginTop sapUiLargeMarginBottom" />
+                    </VBox>
+                    <HBox alignContent="End" class="sapUiMediumMarginEnd">
+                        <core:Fragment fragmentName="sprints.portal.sprintsdashboard.ext.fragments.QuickStatus" type="XML" />
+                    </HBox>
+                </HBox>
+            </VBox>
+            <VBox width="100%" class="sprintsContentOverlap sprintsContentPadding">
+                <core:Fragment fragmentName="sprints.portal.sprintsdashboard.ext.fragments.ResumeQuest" type="XML" />
+            </VBox>
+            <VBox width="100%" >
+                <core:Fragment fragmentName="sprints.portal.sprintsdashboard.ext.fragments.TrackSelection" type="XML" />
+            </VBox>
+        </ScrollContainer>
+    </tnt:mainContents>
+</tnt:ToolPage>
+</mvc:View>

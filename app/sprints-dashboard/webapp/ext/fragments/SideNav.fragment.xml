@@ -2,9 +2,9 @@
     xmlns="sap.m"
     xmlns:tnt="sap.tnt"
     xmlns:core="sap.ui.core">
-    <tnt:SideNavigation selectedKey="home" itemSelect="onItemSelect" width="4rem">
+    <tnt:SideNavigation selectedKey="home" width="4rem">
         <tnt:item>
-            <tnt:NavigationList expanded="false">
+            <tnt:NavigationList expanded="false" itemSelect="onItemSelect">
                 <tnt:NavigationListItem icon="sap-icon://home" key="home" class="largeIcon" text="Home" />
                 <tnt:NavigationListItem icon="sap-icon://target-group" key="leaderboard" class="largeIcon" text="Leaderboard" />
                 <tnt:NavigationListItem icon="sap-icon://learning-assistant" key="mySprints" class="largeIcon" text="My Sprints" />

@@ -23,12 +23,12 @@
                 <Button text="View All Achievements" type="Emphasized" class="sapUiSmallMarginTop" width="100%" />
             </VBox>
         </content>
-        <footer>
+        <!-- <footer>
             <Toolbar>
                 <Button text="Edit Profile" icon="sap-icon://personnel-view" press="onEditProfile" />
                 <ToolbarSpacer />
                 <Button text="Sign Out" icon="sap-icon://log" press="onLogout" />
             </Toolbar>
-        </footer>
+        </footer> -->
     </ResponsivePopover>
 </core:FragmentDefinition>
