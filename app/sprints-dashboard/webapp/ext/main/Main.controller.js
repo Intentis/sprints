@@ -7,12 +7,13 @@ sap.ui.define(
 
         return PageController.extend('sprints.portal.sprintsdashboard.ext.main.Main', {
             onItemSelect: function (oEvent) {
-                console.log("Item selected:", oEvent.getParameter("item").getKey());
                 var oItem = oEvent.getParameter("item");
                 var sKey = oItem.getKey();
 
+                // Capitalize first letter to match view file name
+                var viewKey = sKey.charAt(0).toUpperCase() + sKey.slice(1);
                 var oView = sap.ui.view({
-                    viewName: "sprints.portal.sprintsdashboard.ext.views." + sKey, // Adjust the view name as needed
+                    viewName: "sprints.portal.sprintsdashboard.ext.views." + viewKey,
                     type: sap.ui.core.mvc.ViewType.XML
                 });
 
@@ -25,7 +26,7 @@ sap.ui.define(
                 PageController.prototype.onInit.apply(this, arguments); 
             // Create the Home view manually
             var oHomeView = sap.ui.view({
-                viewName: "sprints.portal.sprintsdashboard.ext.views.Home", // Adjust the view name as needed
+                viewName: "sprints.portal.sprintsdashboard.ext.views.Home",
                 type: sap.ui.core.mvc.ViewType.XML
             });
 
